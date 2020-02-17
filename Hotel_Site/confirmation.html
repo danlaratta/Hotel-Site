@@ -1,0 +1,74 @@
+    <!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Laratta Resort </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="navbar.js"></script>
+    
+     <script type="text/javascript">
+        function nextSlide() {
+	       if (typeof $ == "undefined") var $ = function(sel) { 
+               return document.querySelector(sel); 
+           }	
+	       $(".slider").appendChild($(".slider img:first-child"));
+        }
+        setInterval(nextSlide, 5000)
+    </script>
+    
+</head>
+
+<body>
+    
+    <a href="index.php"> <img class="logo" src="images/logo-blue.png"/> </a>
+    
+    <nav class="topNav">
+        <ul>
+            <li> 1-800-LARATTA </li>
+            <li> | </li>
+            <li> LarattaResort@gmail.com </li>
+            <li> | </li>
+            <li> 15 Laratta Lane, Nassau, Bahamas </li>
+        </ul>    
+    </nav>
+    
+    <nav class="lowerNav">
+        <ul>
+            <li> <a href="dining.html"> Dining </a> </li>
+            <li> <a href="excursion.html"> Excursions </a> </li>
+            <li> <a href="activities.html"> Activities </a> </li>
+            <li> <a href="casino.html"> Casino </a> </li>
+        </ul>
+    </nav>
+    
+    <div class="slider">
+        <img src="images/slide1.jpeg" style="width:100%">
+        <img src="images/slide2.jpg" style="width:100%">
+        <img src="images/slide3.jpg" style="width:100%">
+        <img src="images/slide4.jpg" style="width:100%">
+    </div>
+    
+    <h1 class="page-title"> Form Successfully Submitted! </h1>
+    
+            
+        
+    <footer>
+        <ul>
+            <li> 1-800-LARATTA </li>
+            <li> | </li>
+            <li> LarattaResort@gmail.com </li>
+            <li> | </li>
+            <li> 15 Laratta Lane, Nassau, Bahamas </li>
+        </ul> 
+            
+    </footer>
+    
+        
+    
+    
+</body>
+    
+</html>

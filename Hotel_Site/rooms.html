@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Laratta Resort </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="navbar.js"></script>
+    
+     <script type="text/javascript">
+        function nextSlide() {
+	       if (typeof $ == "undefined") var $ = function(sel) { 
+               return document.querySelector(sel); 
+           }	
+	       $(".slider").appendChild($(".slider img:first-child"));
+        }
+        setInterval(nextSlide, 5000)
+    </script>
+    
+</head>
+
+<body>
+    
+    <a href="index.php"> <img class="logo" src="images/logo-blue.png"/> </a>
+    
+    <nav class="topNav">
+        <ul>
+            <li> 1-800-LARATTA </li>
+            <li> | </li>
+            <li> LarattaResort@gmail.com </li>
+            <li> | </li>
+            <li> 15 Laratta Lane, Nassau, Bahamas </li>
+        </ul>    
+    </nav>
+    
+    <nav class="lowerNav">
+        <ul>
+            <li> <a href="dining.html"> Dining </a> </li>
+            <li> <a href="excursion.html"> Excursions </a> </li>
+            <li> <a href="activities.html"> Activities </a> </li>
+            <li> <a href="casino.html"> Casino </a> </li>
+        </ul>
+    </nav>
+    
+    <div class="slider">
+        <img src="images/slide1.jpeg" style="width:100%">
+        <img src="images/slide2.jpg" style="width:100%">
+        <img src="images/slide3.jpg" style="width:100%">
+        <img src="images/slide4.jpg" style="width:100%">
+    </div>
+    
+    <h1 class="page-title"> Room Options </h1>
+           
+    <div class="rooms">
+        <h1 class="room1"> $300.00 </h1>
+        <h1 class="room2"> $400.00 </h1>
+        <h1 class="room3"> $600.00 </h1>
+        <img src="images/room1.jpg">
+        <img src="images/room2.jpg">
+        <img src="images/room3.jpg">
+        
+        <div class="rooms-info">
+            <h1> Deluxe Oceanview Single </h1>
+            <div class="details">
+                <h2 class="detail1">  Balcony: Yes </h2>
+                <h2 class="detail2"> Sleeps: 2 </h2>
+                <h2 class="detail3"> Beds: 1 Queen Beds </h2>
+                <h2 class="detail3"> Rooms: 1 </h2>
+            </div>
+            
+            <div class="room-form"> 
+                <form action="rooms.php" method="POST">
+                    <button name="room1" type="submit"> Book Room </button>
+                </form>
+            </div>
+            
+        </div>
+        
+        <div class="rooms-info">
+            <h1> Deluxe Non-Oceanview Double</h1>
+            <div class="details">
+                <h2 class="detail1"> Balcony: No </h2>
+                <h2 class="detail2"> Sleeps: 4 </h2>
+                <h2 class="detail3"> Beds: 2 Queen Beds </h2>
+                <h2 class="detail3"> Rooms: 1 </h2>
+            </div>
+            
+            <div class="room-form"> 
+                <form action="rooms.php" method="POST">
+                    <button name="room2" type="submit"> Book Room </button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="rooms-info">
+            <h1> Deluxe Oceanview Double </h1>
+            <div class="details">
+                <h2 class="detail1"> Balcony: Yes </h2>
+                <h2 class="detail2"> Sleeps: 4 </h2>
+                <h2 class="detail3"> Beds: 2 Queen Beds </h2>
+                <h2 class="detail3"> Rooms: 1 </h2>
+            </div>
+            
+            <div class="room-form"> 
+                <form action="rooms.php" method="POST">
+                    <button name="room3" type="submit"> Book Room </button>
+                </form>
+            </div>
+        </div>
+        
+        <h1 class="room4"> $850.00 </h1>
+        <h1 class="room5"> $1000.00 </h1>
+        <h1 class="room6"> $1200.00 </h1>
+        <img src="images/room%204.jpg">
+        <img src="images/room%205.jpg">
+        <img src="images/room6.jpg">
+        
+        <div class="rooms-info">
+            <h1> Non-Oceanview Suite </h1>
+            <div class="details">
+                <h2 class="detail1"> Balcony: No </h2>
+                <h2 class="detail2"> Sleeps: 6 </h2>
+                <h2 class="detail3"> Beds: 3 Queen Beds </h2>
+                <h2 class="detail3"> Rooms: 2 </h2>
+            </div>
+            
+            <div class="room-form"> 
+                <form action="rooms.php" method="POST">
+                    <button name="room4" type="submit"> Book Room </button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="rooms-info">
+            <h1>  Non-Oceanview Executive Suite </h1>
+            <div class="details">
+                <h2 class="detail1"> Balcony: No </h2>
+                <h2 class="detail2"> Sleeps: 6 </h2>
+                <h2 class="detail3"> Beds: 3 Queen Beds </h2>
+                <h2 class="detail3"> Rooms: 3 </h2>
+            </div>
+            
+            <div class="room-form"> 
+                <form action="rooms.php" method="POST">
+                    <button name="room5" type="submit"> Book Room </button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="rooms-info">
+            <h1> Oceanview Executive Suite </h1>
+            <div class="details">
+                <h2 class="detail1"> Balcony: Yes </h2>
+                <h2 class="detail2"> Sleeps: 6 </h2>
+                <h2 class="detail3"> Beds: 3 Queen Beds </h2>
+                <h2 class="detail3"> Rooms: 3 </h2>
+            </div>
+    
+            <div class="room-form"> 
+                <form action="rooms.php" method="POST">
+                    <button name="room6" type="submit"> Book Room </button>
+                </form>
+            </div>
+        </div>
+    
+    </div>
+        
+    <footer>
+        <ul>
+            <li> 1-800-LARATTA </li>
+            <li> | </li>
+            <li> LarattaResort@gmail.com </li>
+            <li> | </li>
+            <li> 15 Laratta Lane, Nassau, Bahamas </li>
+        </ul> 
+            
+    </footer>
+    
+        
+    
+    
+</body>
+    
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Laratta Resort </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="navbar.js"></script>    
+    
+</head>
+
+<body>
+    
+    <a href="index.php"> <img class="logo" src="images/logo-blue.png"/> </a>
+    
+    <nav class="topNav">
+        <ul>
+            <li> 1-800-LARATTA </li>
+            <li> | </li>
+            <li> LarattaResort@gmail.com </li>
+            <li> | </li>
+            <li> 15 Laratta Lane, Nassau, Bahamas </li>
+        </ul>    
+    </nav>
+    
+    <nav class="lowerNav">
+        <ul>
+            <li> <a href="dining.html"> Dining </a> </li>
+            <li> <a href="excursion.html" class="active"> Excursions </a> </li>
+            <li> <a href="activities.html"> Activities </a> </li>
+            <li> <a href="casino.html"> Casino </a> </li>
+        </ul>
+    </nav>
+    
+    <img class="header-img" src="images/excursion-header.webp">
+    
+    <div class="booking">
+        <form action="reservation.php" method="POST">
+            <h1 class="book"> Book Your Trip: </h1>
+            <input type="date" id="start" name="trip-start" 
+            value="yyyy-mm-dd" min="2019-11-03" max="2020-12-31">
+
+            <input type="date" id="end" name="trip-end" 
+            value="yyyy-mm-dd" min="2019-11-04" max="2020-12-31">
+
+            <select id="rooms" name="rooms">
+                <option value="volvo"> Number of Rooms </option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+            </select>
+
+            <select id="adults" name="adults">
+                <option value="volvo"> Number of Adults </option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+            </select>
+
+            <select id="children" name="kids">
+                <option value="volvo"> Number of Children </option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+            </select>
+
+            <button type="submit" id="submit"> Book Now </button>
+
+        </form>
+
+    </div>
+    
+    <h1 class="page-title"> Bahama Excursions </h1>
+    
+    <div class="excursions">
+        <img src="images/dolphins.jpg">
+        <img src="images/boat.jpg">
+        <img src="images/waterpark.jpg">
+        
+        <div class="excursions-info">
+            <h1> Swimming with Dolphins</h1>
+            <p> Are you a dolphin lover? Well then this is the excursion for you and the whole family! You will have the opportunity to swim with, ride, and kiss dolphins! </p>
+        </div>
+        
+        <div class="excursions-info">
+            <h1> Glass Bottom Boat </h1>
+            <p> Are you a dolphin lover? Well then this is the excursion for you and the whole family! You will have the opportunity to wwim with, ride, and kiss dolphins! </p>
+        </div>
+        
+        <div class="excursions-info">
+            <h1> Atlantis Waterpark</h1>
+            <p> Take the family for a thrill ride down the many different water slides Atlantis has to offer. You can also float down a lazy river or cannon ball into one of eleven pools! </p>
+        </div>
+        
+        <img src="images/fishing.jpg">
+        <img src="images/jetski.jpg">
+        <img src="images/snorkeling.jpg">
+        
+        <div class="excursions-info">
+            <h1> Deep Sea Fishing </h1>
+            <p> Bahamian waters are known for their big game fish that are just waiting to be caught by you. Whether you are a first timer or you're a seasoned veteran, this excursion is fun for everyone! </p>
+        </div>
+        
+        <div class="excursions-info">
+            <h1> Jekski Tour </h1>
+            <p> Join a tour guide and several others on a jetski tour down the beatutiful coastline of the Bahamas. Its a sight like none other!  </p>
+        </div>
+        
+        <div class="excursions-info">
+            <h1> Snorkeling</h1>
+            <p> Explore the world that is hidden below the ocean's surface. Take a ride out to sea on a boat and float around and see the beautiful colored sea creatures!  </p>
+        </div>
+    
+    </div>
+    
+    
+    
+    
+    <footer>
+        <ul>
+            <li> 1-800-LARATTA </li>
+            <li> | </li>
+            <li> LarattaResort@gmail.com </li>
+            <li> | </li>
+            <li> 15 Laratta Lane, Nassau, Bahamas </li>
+        </ul> 
+            
+    </footer>
+        
+    
+    
+</body>
+    
+</html>

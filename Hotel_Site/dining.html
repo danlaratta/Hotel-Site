@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Laratta Resort </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="navbar.js"></script>    
+</head>
+
+<body>
+    
+    <a href="index.php"> <img class="logo" src="images/logo-blue.png"/> </a>
+    
+    <nav class="topNav">
+        <ul>
+            <li> 1-800-LARATTA </li>
+            <li> | </li>
+            <li> LarattaResort@gmail.com </li>
+            <li> | </li>
+            <li> 15 Laratta Lane, Nassau, Bahamas </li>
+        </ul>    
+    </nav>
+    
+    <nav class="lowerNav">
+        <ul>
+            <li> <a href="dining.html" class="active"> Dining </a> </li>
+            <li> <a href="excursion.html"> Excursions </a> </li>
+            <li> <a href="activities.html"> Activities </a> </li>
+            <li> <a href="casino.html"> Casino </a> </li>
+        </ul>
+    </nav>
+    
+    <img class="dining-img" src="images/dining-header.jpg">
+    
+    <div class="booking">
+        <form action="reservation.php" method="POST">
+            <h1 class="book"> Book Your Trip: </h1>
+            <input type="date" id="start" name="trip-start" 
+            value="yyyy-mm-dd" min="2019-11-03" max="2020-12-31">
+
+            <input type="date" id="end" name="trip-end" 
+            value="yyyy-mm-dd" min="2019-11-04" max="2020-12-31">
+
+            <select id="rooms" name="rooms">
+                <option value="volvo"> Number of Rooms </option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+            </select>
+
+            <select id="adults" name="adults">
+                <option value="volvo"> Number of Adults </option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+            </select>
+
+            <select id="children" name="kids">
+                <option value="volvo"> Number of Children </option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+            </select>
+
+            <button type="submit" id="submit"> Book Now </button>
+
+        </form>
+
+    </div>
+    
+    <h1 class="page-title"> Food and Drinks </h1>
+    
+    <div class="dining">
+        <div class="food"> 
+            <h1> Ocean Breeze Restaurant </h1>
+            <p> If you're looking for a fantastic meal and an even better view, then Ocean Breeze Restaurant is for you. There are a variety of seafood dishes to choose from and the outdoor seating near the water offers a great eating experience. </p>
+        </div>
+        
+        <img src="images/dining1.jpg">
+        
+        
+        <img src="images/dining2.jpg">
+        
+         <div class="food"> 
+            <h1> Solstice Restaurant </h1>
+            <p> Solstice is the perfect place to indulge in a fine dining setting. There are plenty of Italian dishes to choose from as well as several different wines. This is a restaurant your family will love.    </p>
+        </div>
+        
+        <div class="food"> 
+            <h1> Rico's Bar and Grill </h1>
+            <p> Rico's Bar and Grill is known for its cold beer and cheese burgers. Its an awesome spot to grab something quick to eat or take a break from the sun and have a few drinks.  </p>
+        </div>
+        
+        <img src="images/dining3.jpg">
+        
+        <img src="images/dining4.jpg">
+        
+         <div class="food"> 
+            <h1> Swim-Up Bar </h1>
+            <p> There's nothing like enjoying a tasty cocktail or refreshing frozen drink while soaking up the sun. You can sit at the bar while cooling off from the heat in the pool or float around with your drink, the choice is yours!</p>
+        </div>
+        
+        
+        
+    </div>
+    
+    
+    
+    <footer>
+        <ul>
+            <li> 1-800-LARATTA </li>
+            <li> | </li>
+            <li> LarattaResort@gmail.com </li>
+            <li> | </li>
+            <li> 15 Laratta Lane, Nassau, Bahamas </li>
+        </ul> 
+            
+    </footer>
+        
+    
+    
+</body>
+    
+</html>

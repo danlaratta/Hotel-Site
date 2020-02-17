@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Laratta Resort </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="navbar.js"></script>
+
+</head>
+
+<body>
+    
+    <a href="index.php"> <img class="logo" src="images/logo-blue.png"/> </a>
+    
+    <nav class="topNav">
+        <ul>
+            <li> 1-800-LARATTA </li>
+            <li> | </li>
+            <li> LarattaResort@gmail.com </li>
+            <li> | </li>
+            <li> 15 Laratta Lane, Nassau, Bahamas </li>
+        </ul>    
+    </nav>
+    
+    <nav class="lowerNav">
+        <ul>
+            <li> <a href="dining.html"> Dining </a> </li>
+            <li> <a href="excursion.html"> Excursions </a> </li>
+            <li> <a href="activities.html"> Activities </a> </li>
+            <li> <a href="casino.html" class="active"> Casino </a> </li>
+        </ul>
+    </nav>
+    
+    <img class="header-img" src="images/casino-header.jpg">
+    
+    <div class="booking">
+        <form action="reservation.php" method="POST">
+            <h1 class="book"> Book Your Trip: </h1>
+            <input type="date" id="start" name="trip-start" 
+            value="yyyy-mm-dd" min="2019-11-03" max="2020-12-31">
+
+            <input type="date" id="end" name="trip-end" 
+            value="yyyy-mm-dd" min="2019-11-04" max="2020-12-31">
+
+            <select id="rooms" name="rooms">
+                <option value="volvo"> Number of Rooms </option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+            </select>
+
+            <select id="adults" name="adults">
+                <option value="volvo"> Number of Adults </option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+            </select>
+
+            <select id="children" name="kids">
+                <option value="volvo"> Number of Children </option>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+            </select>
+
+            <button type="submit" id="submit"> Book Now </button>
+
+        </form>
+
+    </div>
+    
+    <h1 class="page-title">  Gambling and Betting </h1>
+    
+    <p class="casino-p"> Laratta Resort's Casino presents the utmost Casino experience. Stop by one of our prestiguous tables and give one of our slot machines a try. Pay a visit to the Race and Sports book area, which has a sports bar feel to supply the best experience. Try out your luck and come pay us a visit in the Casino!
+    </p>
+    
+    <img class="casino-img" src="images/casino1.png">
+    
+    
+    
+    <div class="casino">
+        <img src="images/slots.jpg">
+        <img src="images/table.jpg">
+        <img src="images/sports-bets.jpg">
+        
+        <div class="casino-info">
+            <h1> Slot Machines </h1>
+            <p> We have hundreds of slots you can choose from most of which only cost you a penny to play! </p>
+        </div>
+        
+        <div class="casino-info">
+            <h1> Table Games </h1>
+            <p> From Blackjack to Roulette to Craps, we have it all. Our casino games are exciting and guarenteed an adrenaline rush!   </p>
+        </div>
+        
+        <div class="casino-info">
+            <h1> Race and Sports <br> Betting </h1>
+            <p> Our Race and Sports betting area has its own private bar, large TV screens, and a seating area to watch all races and game!  </p>
+        </div>
+    
+    </div>
+    
+    
+    <footer>
+        <ul>
+            <li> 1-800-LARATTA </li>
+            <li> | </li>
+            <li> LarattaResort@gmail.com </li>
+            <li> | </li>
+            <li> 15 Laratta Lane, Nassau, Bahamas </li>
+        </ul> 
+            
+    </footer>
+    
+        
+    
+    
+</body>
+    
+</html>
